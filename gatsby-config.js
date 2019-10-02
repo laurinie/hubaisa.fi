@@ -7,10 +7,10 @@ try {
 
 // Overwrite the Contentful config with environment variables if they exist
 contentfulConfig = {
-  spaceId: process.env.SPACE_ID,
-  accessToken: process.env.ACCESS_TOKEN,
+  spaceId: process.env.SPACE_ID||contentfulConfig.spaceId,
+  accessToken: process.env.ACCESS_TOKEN||contentfulConfig.accessToken,
 }
-
+console.log(contentfulConfig)
 const { spaceId, accessToken } = contentfulConfig
 
 if (!spaceId || !accessToken) {

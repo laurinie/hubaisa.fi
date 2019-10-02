@@ -1,20 +1,15 @@
 {
-  "name": "Contentful Gatsby Starter",
-  "description": "Gatsby starter for a Contentful project.",
+  "name": "Hubaisa.fi",
+  "description": "Site of a young developer",
   "keywords": [
     "contentful",
     "gatsby",
     "static",
-    "ssg"
+    "ssg",
+    "lauri",
+    "hubaisa",
+    "fullstack"
   ],
-  "repository": "https://github.com/contentful-userland/gatsby-contentful-starter",
-  "success_url": "/",
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-static"
-    }
-  ]
+  "repository": "https://github.com/laurinie/hubaisa.fi",
+  "success_url": "/"
 }
