@@ -14,7 +14,10 @@ const RootIndex = (props) => {
       return (
         <div className={pageStyles.indexblock}>
           <Link to={`/${block.slug}`} >
-            <h1>{block.title}</h1>
+            <div className={pageStyles.link}>
+              <h1>{block.title}</h1>
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" /><path d="M0 0h24v24H0V0z" fill="none" /></svg>
+            </div>
             <p>{block.description}</p>
           </Link>
         </div>
@@ -23,7 +26,6 @@ const RootIndex = (props) => {
   }
   const post = get(props, 'data.contentfulPage')
   // const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-  console.log(post);
   return (
     <Layout>
       <Helmet title={`Tapahtuma Ryö`} />

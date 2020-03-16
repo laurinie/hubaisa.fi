@@ -12,16 +12,28 @@
 .highlighted {
   background-color: #270c2b;
   color: white;
-  height: 100px;
   padding: 20px;
+  margin: 0px;
+  margin-top: -8px;
 }
-.indexblock{
+
+.indexblock {
   padding: 10px;
   overflow: hidden;
 }
-.indexblock:hover{
+
+.indexblock:hover {
   background-color: #1a001d0d;
 }
-.block{
+
+.block {
   overflow: hidden;
+}
+
+.link {
+  display: flex;
+}
+.link svg{
+  margin-bottom: auto;
+  margin-top: auto;
 }
