@@ -13,8 +13,8 @@ module.exports = {
 
     // JSONLD / Manifest
     favicon: 'src/images/ryo.png', // Used for manifest favicon generation
-    shortName: 'tapahuma ryö', // shortname for manifest. MUST be shorter than 12 characters
-    author: 'Ryö Oy', // Author for schemaORGJSONLD
+    shortName: 'tapahuma ryo', // shortname for manifest. MUST be shorter than 12 characters
+    author: 'Ryo Oy', // Author for schemaORGJSONLD
     themeColor: '#fc0303',
     backgroundColor: '#fff',
 
