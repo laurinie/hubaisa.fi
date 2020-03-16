@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: "https:tapahtuma.ryo.fi",
+    siteUrl: "https://tapahtuma.ryo.fi",
     pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
     title: 'Ryö', // Navigation and Site Title
     titleAlt: 'Ryo', // Title for JSONLD
@@ -19,7 +19,7 @@ module.exports = {
     backgroundColor: '#fff',
 
     // twitter: '@starter_prismicio', // Twitter Username
-    facebook: 'Ryö', // Facebook Site Name
+    facebook: 'Ryo', // Facebook Site Name
     googleAnalyticsID: 'UA-160763804-1',
 
     // skip,NavId: 'reach-skip-nav', // ID for the "Skip to content" a11y feature
