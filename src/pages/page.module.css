@@ -1,0 +1,27 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 61.8vh;
+  max-height: 400px;
+  background: #e1e1e1;
+  font-size: 2em;
+  overflow: hidden;
+}
+
+.highlighted {
+  background-color: #270c2b;
+  color: white;
+  height: 100px;
+  padding: 20px;
+}
+.indexblock{
+  padding: 10px;
+  overflow: hidden;
+}
+.indexblock:hover{
+  background-color: #1a001d0d;
+}
+.block{
+  overflow: hidden;
+}

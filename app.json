@@ -1,15 +1,14 @@
 {
-  "name": "Hubaisa.fi",
-  "description": "Site of a young developer",
+  "name": "tapahtuma.ryo",
+  "description": "Tapahtuma Ryö sivut",
   "keywords": [
-    "contentful",
-    "gatsby",
-    "static",
-    "ssg",
-    "lauri",
-    "hubaisa",
-    "fullstack"
+    "tapahtumatekniikka",
+    "pa",
+    "valot",
+    "itä-helsinki",
+    "bileet",
+    "häät"
   ],
-  "repository": "https://github.com/laurinie/hubaisa.fi",
+  "repository": "https://github.com/laurinie/tapahtuma.ryo",
   "success_url": "/"
 }
