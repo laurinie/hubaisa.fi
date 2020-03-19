@@ -7,7 +7,7 @@ import Layout from "../layouts/index";
 import pageStyles from "./page.module.css";
 import Link from 'gatsby-link'
 
-const RootIndex = (props) => {
+const notFound = (props) => {
   const renderBlock = (block) => {
     if (block.title !== "empty") {
       return (
@@ -17,7 +17,6 @@ const RootIndex = (props) => {
               <h1>{block.title}</h1>
               <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" /><path d="M0 0h24v24H0V0z" fill="none" /></svg>
             </div>
-            <p>{block.description}</p>
           </Link>
         </div>
       )
@@ -48,11 +47,11 @@ const RootIndex = (props) => {
 }
 
 
-export default RootIndex
+export default notFound
 
 export const pageQuery = graphql`
-  query FrontPage{
-    contentfulPage(slug: {eq: "/"}) {
+query ErrorPage {
+    contentfulPage(slug: {eq: "404"}) {
       slug
       title
       coverImage {
@@ -62,15 +61,9 @@ export const pageQuery = graphql`
       }
       highlighted
       blocks {
-        ... on ContentfulBlock {
-        title
-        description
-        slug
-        content {
-          childMarkdownRemark {
-            html
-          }
-        }
+        ... on ContentfulPage {
+          slug
+          title
         }
       }
     }
