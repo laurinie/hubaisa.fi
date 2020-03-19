@@ -5,8 +5,6 @@ import { graphql } from "gatsby"
 import NonStretchedImage from "../components/NonStretchedImage";
 import Layout from "../layouts/index";
 import Link from 'gatsby-link'
-
-import heroStyles from '../components/hero.module.css'
 import pageStyles from "../pages/page.module.css";
 
 class PageTemplate extends React.Component {
@@ -16,7 +14,7 @@ class PageTemplate extends React.Component {
         <div className={pageStyles.block}>
           <h1>{block.title}</h1>
           <div
-            className={heroStyles.block}
+            className={pageStyles.block}
             dangerouslySetInnerHTML={{
               __html: block.content.childMarkdownRemark.html,
             }}
@@ -31,9 +29,9 @@ class PageTemplate extends React.Component {
       <Layout>
         <div>
           <Helmet title={`Ryö ${post.title}`} />
-          <div className={heroStyles.hero}>
-            {post.highlighted !== null ? <h2 className={pageStyles.highlighted}>{post.highlighted}</h2> : ""}
-            <NonStretchedImage className={heroStyles.heroImage} fluid={post.coverImage.fluid} />
+          <div className={pageStyles.cover}>
+            {post.highlighted !== null && <h2 className={pageStyles.highlighted}>{post.highlighted}</h2>}
+            <NonStretchedImage className={pageStyles.coverImage} fluid={post.coverImage.fluid} />
           </div>
           <div className="wrapper">
             <Link to="/"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/><path d="M0 0h24v24H0V0z" fill="none"/></svg>Takaisin</Link>
