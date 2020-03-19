@@ -6,6 +6,7 @@ import NonStretchedImage from "../components/NonStretchedImage";
 import Layout from "../layouts/index";
 import pageStyles from "./page.module.css";
 import Link from 'gatsby-link'
+import SEO from "../components/SEO";
 
 const RootIndex = (props) => {
   const renderBlock = (block) => {
@@ -26,6 +27,12 @@ const RootIndex = (props) => {
   const post = get(props, 'data.contentfulPage')
   return (
     <Layout>
+      <SEO
+        title={post.title}
+        description={post.highlighted}
+        path={post.slug}
+        cover={post.coverImage && post.coverImage.fluid}
+      />
       <Helmet title={`Tapahtuma Ryö`} />
       <div className={pageStyles.cover}>
         <NonStretchedImage className={pageStyles.coverImage} objectFit={"contain"} fluid={post.coverImage.fluid} />

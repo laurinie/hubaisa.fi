@@ -3,7 +3,7 @@ module.exports = {
     pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
     title: 'Ryö', // Navigation and Site Title
     titleAlt: 'Ryo', // Title for JSONLD
-    description: "Tapahtuma ryö tarjoaa tekniikan pieniin tapahtumiin. Oli kyseessä sitten häät tai kotibileet, meitä pitäisi löytä siihen ratkaisu. Kaiutimet ja valot",
+    description: "Tapahtuma ryö tarjoaa tekniikan pieniin tapahtumiin. Oli kyseessä sitten häät tai kotibileet, meiltä pitäisi löytä siihen ratkaisu. Kaiutimet ja valot",
     headline: 'Itä-Helsinkiläinen tapahtumatekniikan yritys', // Headline for schema.org JSONLD
     url: 'https://tapahtuma.ryo.fi', // Domain of your site. No trailing slash!
     siteLanguage: 'fi', // Language Tag on <html> element

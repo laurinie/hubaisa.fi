@@ -6,6 +6,7 @@ import NonStretchedImage from "../components/NonStretchedImage";
 import Layout from "../layouts/index";
 import Link from 'gatsby-link'
 import pageStyles from "../pages/page.module.css";
+import SEO from "../components/SEO";
 
 class PageTemplate extends React.Component {
   renderBlock(block) {
@@ -27,10 +28,16 @@ class PageTemplate extends React.Component {
     const post = get(this.props, 'data.contentfulPage')
     return (
       <Layout>
+        <SEO
+        title={post.title}
+        description={post.highlighted}
+        path={post.slug}
+        cover={post.coverImage && post.coverImage.fluid}
+      />
         <div>
           <Helmet title={`Ryö ${post.title}`} />
           <div className={pageStyles.cover}>
-            {post.highlighted !== null && <h2 className={pageStyles.highlighted}>{post.highlighted}</h2>}
+            {post.highlighted && <h2 className={pageStyles.highlighted}>{post.highlighted}</h2>}
             <NonStretchedImage className={pageStyles.coverImage} objectFit={"cover"} fluid={post.coverImage.fluid} />
           </div>
           <div className="wrapper">
