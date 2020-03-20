@@ -32,7 +32,7 @@ class PageTemplate extends React.Component {
         title={post.title}
         description={post.highlighted}
         path={post.slug}
-        cover={post.coverImage && post.coverImage.fluid}
+        cover={post.coverImage && post.coverImage.fluid && post.coverImage.fluid.src}
       />
         <div>
           <Helmet title={`Ryö ${post.title}`} />

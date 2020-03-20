@@ -31,7 +31,7 @@ const RootIndex = (props) => {
         title={post.title}
         description={post.highlighted}
         path={post.slug}
-        cover={post.coverImage && post.coverImage.fluid}
+        cover={post.coverImage && post.coverImage.fluid && post.coverImage.fluid.src}
       />
       <Helmet title={`Tapahtuma Ryö`} />
       <div className={pageStyles.cover}>
