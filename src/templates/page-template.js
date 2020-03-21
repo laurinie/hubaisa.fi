@@ -30,9 +30,10 @@ class PageTemplate extends React.Component {
       <Layout>
         <SEO
         title={post.title}
-        description={post.highlighted}
-        path={post.slug}
-        cover={post.coverImage && post.coverImage.fluid && post.coverImage.fluid.src}
+        description={post.description}
+        pathname={post.slug}
+        article={'article'}
+        banner={post.coverImage && post.coverImage.fluid && post.coverImage.fluid.src}
       />
         <div>
           {/* <Helmet title={post.title} /> */}
@@ -65,6 +66,7 @@ query PageBySlug($slug: String!) {
       }
     }
     highlighted
+    description
     blocks {
       ... on ContentfulBlock {
       title

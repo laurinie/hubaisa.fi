@@ -26,7 +26,6 @@ const notFound = (props) => {
   const post = get(props, 'data.contentfulPage')
   return (
     <Layout>
-      <Helmet title={`Tapahtuma Ryö`} />
       <div className={pageStyles.cover}>
         <NonStretchedImage className={pageStyles.coverImage} objectFit={"contain"} fluid={post.coverImage.fluid} />
         <Highlighted highlighted={post.highlighted}/>
