@@ -35,7 +35,7 @@ class PageTemplate extends React.Component {
         cover={post.coverImage && post.coverImage.fluid && post.coverImage.fluid.src}
       />
         <div>
-          <Helmet title={`Ryö ${post.title}`} />
+          {/* <Helmet title={post.title} /> */}
           <div className={pageStyles.cover}>
             {post.highlighted && <h2 className={pageStyles.highlighted}>{post.highlighted}</h2>}
             <NonStretchedImage className={pageStyles.coverImage} objectFit={"cover"} fluid={post.coverImage.fluid} />
