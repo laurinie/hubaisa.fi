@@ -34,7 +34,7 @@ class PageTemplate extends React.Component {
         description={post.description}
         pathname={post.slug}
         article={'article'}
-        banner={post.coverImage && post.coverImage.fluid && post.coverImage.fluid.src}
+        // banner={post.coverImage && post.coverImage.fluid && post.coverImage.fluid.src}
       />
         <div>
           {/* <Helmet title={post.title} /> */}

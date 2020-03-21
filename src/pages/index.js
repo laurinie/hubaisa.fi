@@ -33,7 +33,7 @@ const RootIndex = (props) => {
         description={post.description}
         pathname={post.slug}
         article={'website'}
-        banner={post.coverImage && post.coverImage.fluid && post.coverImage.fluid.src}
+        // banner={post.coverImage && post.coverImage.fluid && post.coverImage.fluid.src}
       />
       {/* <Helmet title={post.title} /> */}
       <div className={pageStyles.cover}>
@@ -65,15 +65,10 @@ export const pageQuery = graphql`
       }
       highlighted
       blocks {
-        ... on ContentfulBlock {
+        ... on ContentfulPage {
         title
         description
         slug
-        content {
-          childMarkdownRemark {
-            html
-          }
-        }
         }
       }
     }

@@ -28,7 +28,7 @@ const SEO = ({ title, description, banner, pathname, article, node }) => {
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${banner&&banner.substring(2) || siteUrl+"/"+defaultBanner}`,
+    image: `${banner&&banner.substring(2) || siteUrl+"/vmv.jpeg"}`,
     url: `${siteUrl}/${pathname || ''}`,
   }
 
