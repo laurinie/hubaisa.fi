@@ -30,9 +30,10 @@ const RootIndex = (props) => {
     <Layout>
       <SEO
         title={post.title}
-        description={post.highlighted}
-        path={post.slug}
-        cover={post.coverImage && post.coverImage.fluid && post.coverImage.fluid.src}
+        description={post.description}
+        pathname={post.slug}
+        article={'website'}
+        banner={post.coverImage && post.coverImage.fluid && post.coverImage.fluid.src}
       />
       {/* <Helmet title={post.title} /> */}
       <div className={pageStyles.cover}>

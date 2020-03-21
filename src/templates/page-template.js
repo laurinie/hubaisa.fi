@@ -26,6 +26,7 @@ class PageTemplate extends React.Component {
   }
   render() {
     const post = get(this.props, 'data.contentfulPage')
+    console.log(post.coverImage.fluid.src);
     return (
       <Layout>
         <SEO

@@ -7,12 +7,12 @@ module.exports = {
     headline: 'Itä-Helsinkiläinen tapahtumatekniikan yritys', // Headline for schema.org JSONLD
     url: 'https://valojamusavuokraus.fi/', // Domain of your site. No trailing slash!
     siteLanguage: 'fi', // Language Tag on <html> element
-    logo: './src/images/vmv.jpeg', // Used for SEO
+    logo: 'src/images/vmv.jpeg', // Used for SEO
     ogLanguage: 'fi_FI', // Facebook Language
-    banner: './src/images/vmv.jpeg',
+    banner: 'src/images/vmv.jpeg',
 
     // JSONLD / Manifest
-    favicon: './src/images/vmv.jpeg', // Used for manifest favicon generation
+    favicon: 'src/images/vmv.jpeg', // Used for manifest favicon generation
     shortName: 'valojamusa', // shortname for manifest. MUST be shorter than 12 characters
     author: 'Ryo Oy', // Author for schemaORGJSONLD
     themeColor: '#520F9D',

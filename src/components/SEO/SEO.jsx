@@ -28,8 +28,8 @@ const SEO = ({ title, description, banner, pathname, article, node }) => {
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${banner || defaultBanner}`,
-    url: `${siteUrl}${pathname || ''}`,
+    image: `${banner&&banner.substring(2) || siteUrl+"/"+defaultBanner}`,
+    url: `${siteUrl}/${pathname || ''}`,
   }
 
   // schema.org in JSONLD format
