@@ -10,11 +10,11 @@ import SEO from "../components/SEO";
 import Highlighted from "../components/higlighted"
 
 const RootIndex = (props) => {
-  const renderBlock = (block) => {
+  const renderBlock = (block,from) => {
     if (block.title !== "empty") {
       return (
         <div className={pageStyles.indexblock}>
-          <Link to={`/${block.slug}`} >
+          <Link to={`/${block.slug}`} state={{from:from}}>
             <div className={pageStyles.link}>
               <h1>{block.title}</h1>
               <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" /><path d="M0 0h24v24H0V0z" fill="none" /></svg>
@@ -43,7 +43,7 @@ const RootIndex = (props) => {
       <div className="wrapper">
         <h1 className="section-headline">{post.title}</h1>
         {post.blocks.map(block => (
-          renderBlock(block)
+          renderBlock(block,post.slug)
         ))}
       </div>
     </Layout>
