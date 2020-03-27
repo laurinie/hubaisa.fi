@@ -13,7 +13,7 @@ const RootIndex = (props) => {
   const renderBlock = (block,from) => {
     if (block.title !== "empty") {
       return (
-        <div className={pageStyles.indexblock}>
+        <div className={pageStyles.indexblock} key={block.slug}>
           <Link to={`/${block.slug}`} state={{from:from}}>
             <div className={pageStyles.link}>
               <h1>{block.title}</h1>
@@ -32,10 +32,8 @@ const RootIndex = (props) => {
         title={post.title}
         description={post.description}
         pathname={post.slug}
-        article={'website'}
-        // banner={post.coverImage && post.coverImage.fluid && post.coverImage.fluid.src}
+        article={false}
       />
-      {/* <Helmet title={post.title} /> */}
       <div className={pageStyles.cover}>
         <NonStretchedImage className={pageStyles.coverImage} objectFit={"contain"} fluid={post.coverImage.fluid} />
         <Highlighted highlighted={post.highlighted}/>

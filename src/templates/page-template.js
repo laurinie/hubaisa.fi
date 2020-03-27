@@ -12,7 +12,7 @@ class PageTemplate extends React.Component {
   renderBlock(block) {
     if (block.title !== "empty") {
       return (
-        <div className={pageStyles.block}>
+        <div className={pageStyles.block} key={block.title}>
           <h1>{block.title}</h1>
           <div
             className={pageStyles.block}
@@ -32,14 +32,14 @@ class PageTemplate extends React.Component {
         title={post.title}
         description={post.description}
         pathname={post.slug}
-        article={'article'}
+        article={true}
         // banner={post.coverImage && post.coverImage.fluid && post.coverImage.fluid.src}
       />
         <div>
           {/* <Helmet title={post.title} /> */}
           <div className={pageStyles.cover}>
             {post.highlighted && <h2 className={pageStyles.highlighted}>{post.highlighted}</h2>}
-            <NonStretchedImage className={pageStyles.coverImage} objectFit={"cover"} fluid={post.coverImage.fluid} />
+            {post.coverImage&&<NonStretchedImage className={pageStyles.coverImage} objectFit={"cover"} fluid={post.coverImage.fluid} />}
           </div>
           <div className="wrapper">
             <Link to={"/"}><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" /><path d="M0 0h24v24H0V0z" fill="none" /></svg>Etusivulle</Link>

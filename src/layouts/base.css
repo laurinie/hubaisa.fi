@@ -29,6 +29,7 @@ a {
   margin: 0 auto;
   padding: 5vmin 0;
   max-width: 1000px;
+  min-height: 50vh;
 }
 
 .section-headline {

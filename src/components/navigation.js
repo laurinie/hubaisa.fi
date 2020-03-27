@@ -27,8 +27,8 @@ const Navigation = (props) => {
         <ul>
        {nav&&nav.links.map(p=>(
            p.slug==="/"?
-           <Link  to={p.slug}><li>{nav&&nav.title}</li></Link>:
-           <Link  to={p.slug}><li>{p.title}</li></Link>
+           <Link key={p.slug}  to={p.slug}><li>{nav&&nav.title}</li></Link>:
+           <Link key={p.slug} to={p.slug}><li>{p.title}</li></Link>
        ))}
        </ul>
        
