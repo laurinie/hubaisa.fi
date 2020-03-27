@@ -6,7 +6,6 @@ import "./info.css";
 const year = 31556952000;
 const Info = () => {
     const [visible,setVisible] = useState(false);
-    console.log(document.cookie)
     const onCookieBannerClick=()=>{
         setVisible(false);
         localStorage.setItem("cookieBannerShowed",2);
