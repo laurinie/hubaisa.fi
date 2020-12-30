@@ -12,7 +12,7 @@ function Template(props){
         <Navigation/>
         {children}   
         <Footer/>
-        <Info/>
+        {/* <Info/> */}
       </Container>
     )
 }
