@@ -51,13 +51,13 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
-    // `gatsby-transformer-sharp`,
-    // {
-    //   resolve: 'gatsby-plugin-google-analytics',
-    //   options: {
-    //     trackingId: website.googleAnalyticsID,
-    //   },
-    // },
+    `gatsby-transformer-sharp`,
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      // options: {
+      //   trackingId: website.googleAnalyticsID,
+      // },
+    },
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',

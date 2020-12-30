@@ -20,7 +20,7 @@ module.exports = {
 
     // twitter: '@starter_prismicio', // Twitter Username
     facebook: 'valojamusavuokraus.fi', // Facebook Site Name
-    googleAnalyticsID: 'UA-160763804-1',
+    // googleAnalyticsID: 'UA-160763804-1',
 
     // skip,NavId: 'reach-skip-nav', // ID for the "Skip to content" a11y feature
 }
